@@ -30,7 +30,7 @@ const Navbar = () => {
           </div>
 
           <div className="hidden lg:flex items-center space-x-8">
-            {['Home', 'About', 'Portfolio', 'Pricing', 'FAQ', 'Contact'].map((item) => (
+            {['Home', 'About', 'Portfolio', 'Product', 'FAQ', 'Contact'].map((item) => (
               <a 
                 key={item}
                 href={`#${item.toLowerCase()}`} 
@@ -42,7 +42,22 @@ const Navbar = () => {
           </div>
 
           <div className="hidden lg:block animate-fade-in-down">
-            <a href="#pricing" className="glow-button px-6 py-3 bg-gradient-to-r from-astro-orange to-astro-yellow text-white font-semibold rounded-full hover:shadow-xl hover:scale-105 transition-all duration-300">
+            <a 
+              href="#product" 
+              className="
+                px-6 py-3 rounded-full text-white font-semibold
+                transition-all duration-500 ease-in-out
+                
+                bg-[linear-gradient(90deg,#FF8C42,#FFD700,#8B5CF6,#4D08B9)]
+                bg-[length:300%_100%]
+                bg-[0%_0%]
+                hover:bg-[100%_0%]
+                
+                shadow-lg shadow-astro-orange/40
+                hover:shadow-astro-purple/60
+                hover:scale-105
+              "
+            >
               Purchase Now
             </a>
           </div>
@@ -71,7 +86,7 @@ const Navbar = () => {
         </div>
 
         <div className="flex flex-col items-center justify-center h-full space-y-8 relative z-10">
-          {['Home', 'About', 'Portfolio', 'Pricing', 'FAQ', 'Contact'].map((item) => (
+          {['Home', 'About', 'Portfolio', 'Product', 'FAQ', 'Contact'].map((item) => (
             <a 
               key={item}
               href={`#${item.toLowerCase()}`} 
@@ -83,7 +98,7 @@ const Navbar = () => {
           ))}
 
           <a 
-            href="#pricing" 
+            href="#product" 
             onClick={closeMenu}
             className="mt-8 px-8 py-4 bg-gradient-to-r from-astro-orange to-astro-yellow text-white font-bold rounded-full text-xl shadow-lg shadow-astro-orange/30 mobile-link hover:scale-105 transition-transform"
           >

@@ -18,7 +18,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20 pb-32">
+    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20 pb-32">
       <div className="absolute inset-0 gradient-bg opacity-90"></div>
 
       <div className="absolute inset-0" id="stars-container">

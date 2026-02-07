@@ -5,11 +5,11 @@ const About = () => {
 
   useEffect(() => {
     const generateStars = () => {
-      const newStars = Array.from({ length: 20 }).map((_, i) => ({
+      const newStars = Array.from({ length: 100 }).map((_, i) => ({
         id: i,
         top: `${Math.random() * 100}%`,
         left: `${Math.random() * 100}%`,
-        delay: `${Math.random() * 5}s`,
+        delay: `${Math.random() * 3}s`,
       }));
       setStars(newStars);
     };
@@ -158,7 +158,7 @@ const About = () => {
 };
 
 const FeatureItem = ({ icon, color, title, desc }: { icon: any, color: string, title: string, desc: string }) => (
-  <div className={`glass-effect rounded-2xl p-6 border-2 border-transparent hover:border-white/10 transition-all duration-300 group `}>
+  <div className={`glass-effect rounded-2xl p-6 border-2 border-white/10 hover:border-white/30 transition-all duration-300 group `}>
     <div className="flex items-start space-x-4">
       <div className={`w-12 h-12 bg-gradient-to-br ${color} rounded-xl flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform shadow-lg`}>
         <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
