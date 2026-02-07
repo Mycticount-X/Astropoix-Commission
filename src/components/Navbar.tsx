@@ -34,7 +34,7 @@ const Navbar = () => {
               <a 
                 key={item}
                 href={`#${item.toLowerCase()}`} 
-                className="text-gray-300 hover:text-astro-orange transition-colors duration-300 font-medium"
+                className="text-gray-300 hover:text-astro-orange transition-colors duration-300 font-bold"
               >
                 {item}
               </a>

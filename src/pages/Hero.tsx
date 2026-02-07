@@ -57,10 +57,10 @@ const Hero = () => {
             <span className="block gradient-text">Come to Life</span>
           </h1>
 
-          <p className="text-xl md:text-2xl text-gray-300 mb-4 max-w-3xl mx-auto">
+          <p className="text-xl md:text-2xl text-gray-300 mb-4 max-w-3xl mx-auto font-bold">
             Professional website development services at affordable prices
           </p>
-          <p className="text-lg text-gray-400 mb-10 max-w-2xl mx-auto">
+          <p className="text-lg text-gray-400 mb-10 max-w-2xl mx-auto font-bold">
             Perfect for business owners, students, and anyone who needs a fast & simple website
           </p>
 
